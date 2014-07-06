@@ -25,15 +25,14 @@
 	right: 39%;
 	background-size: 100%, 100%;
 	background-image: url("bar_green.png");
-	border-radius: 25px;
-	color: #4682B4;
+	border-rad
 }
 
 .full_page .header .status h1{
 	text-align: center;
 	color: black;
 	font-family: "Verdana";
-	color:#4682B4; 
+	color:#4682B4;
 }
 
 .full_page .header .logo {

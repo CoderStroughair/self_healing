@@ -1,5 +1,7 @@
 //<!-- This Javascript Sheet was created by Michael Stroughair in the Summer of 2015 for the ESB Self-Healing Network model-->
 
+
+//Update: Parses the html code to find the time variable, and then chooses to hide/unhide parts of the webpage, and change art assets based on this value.
 var update = setInterval(function(){
 	var time = document.getElementById("time").contentWindow.document.body.h1.innerHTML.match(/\d+/g);
 	if (time === "9") //ie, when the fault has not been triggered
