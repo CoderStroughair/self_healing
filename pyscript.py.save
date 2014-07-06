@@ -32,8 +32,8 @@ def setup():		#A function that sets the LEDs up to the resting configuration, ie
 def refill(start, end):	#A function that will fill from the selected start and end point with Blue, simulating the recovery element of the Network
 	led.fill(Color(0,15,25), start, start);				#Changes the color of the Semaphore
 	led.update();							
-#	var anim = led.ColorWipe(led, Colour(0,0,255), start+1, end);	#Changes the color of the other LEDs in step.
-#	for i in range(5):
+	var anim = led.ColorWipe(led, Colour(0,0,255), start+1, end);	#Changes the color of the other LEDs in step.
+	o i in range(5):
 #		anim.step();
 #		led.update();
 #		sleep(0);
@@ -42,11 +42,11 @@ setup();
 while true:
 	GPIO.wait_for_edge(1, GPIO.RISING);					#waiting for someone to press the button that triggers a fault
 
-#	var anim = led.ColorWipe2(led, Color(0,150,0),sectionStart[0],ledEnd);	#Turns damaged set of LEDs to red, indicating a fault
-#	for i in range(50):
-#		anim.step();
-#		led.update();
-#		sleep(0);
+	var anim = led.ColorWipe2(led, Color(0,150,0),sectionStart[0],ledEnd);	#Turns damaged set of LEDs to red, indicating a fault
+	for i in range(50):
+		anim.step();
+		led.update();
+		sleep(0);
 	fWrite("0");
 	sleep(5);
 	
