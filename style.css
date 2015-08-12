@@ -1,0 +1,160 @@
+/*<!-- This Style Sheet was created by Michael Stroughair in the Summer of 2015 for the ESB Self-Healing Network model-->*/
+
+.full_page{
+	z-index:-2;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-position: center;
+	background-size: cover;
+	background-image: url('windmill-background-wave.jpg')
+}
+
+.full_page .header {
+	position: relative;
+	height: 17%;
+	
+}
+
+.full_page .header .status{
+	position: absolute;
+	top: 20%;
+	bottom: 0;
+	left: 39%;
+	right: 39%;
+	background-size: 100%, 100%;
+	background-image: url("bar_green.png");
+}
+
+.full_page .header .status h1{
+	text-align: center;
+	color: black;
+	margin-top: 14%;
+}
+
+.full_page .header .logo {
+	position:relative;
+	margin-top: 2%;
+	width: 18%;
+	height: 50%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: 5%;
+	background-position: center;
+	background-size: 100% 100%;
+	background-image: url('networks_logo.png');
+
+}
+
+.full_page .footer{
+	position: relative;
+	height: 80%;
+	width: 100%;
+}
+
+#time{
+	position: absolute;
+	top: 0;
+	bottom: 85%;
+	left: 75%;
+	right: 5%;
+	text-align: center;
+	color: white;
+}
+
+.full_page .footer .chart{
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 30%;
+	right: 30%;
+	bottom: 45%;
+	background-position: center;
+	background-size: 100% 100%;
+	background-image: url('transparency.png');
+	border: 3px solid black;
+}
+
+.full_page .footer .chart .bar_red{
+	position: absolute;
+	top: 8%;
+	bottom: 8%;
+	left: 20%;
+	right: 65%;
+	border: 1px solid black;
+	background-size: 100%, 100%;
+	background-image: url("bar_red.png");
+}
+
+.full_page .footer .chart .bar_yellow{
+	position: absolute;
+	top: 8%;
+	bottom: 8%;
+	left: 65%;
+	right: 20%;
+	border: 1px solid black;
+	background-size: 100%, 100%;
+	background-image: url("bar_yellow.png");
+}
+
+.full_page .footer .chart .text_left {
+	position: absolute;
+	top: 92%;
+	bottom: 0;
+	left: 0;
+	right: 50%;
+	border: 1px solid black;
+	color: white;
+	text-align: center;
+	font-size: 15px;
+	border-top: 3px solid black;
+}
+.full_page .footer .chart .text_right {
+	position: absolute;
+	top: 92%;
+	bottom: 0;
+	left: 50%;
+	right: 0;
+	border: 1px solid black;
+	color: white;
+	text-align: center;
+	font-size: 15px;
+	border-top: 3px solid black;
+}
+
+.full_page .footer .chart .scale_top{
+	position: absolute;
+	top: 0;
+	bottom: 92%;
+	border-bottom: 3px solid black;
+	left: 20%;
+	right: 20%;
+	color: white;
+	text-align: center;
+}
+
+.full_page .footer .chart .scale_bottom{
+	z-index: 1;
+	position: absolute;
+	top: 84%;
+	bottom: 0%;
+	border-top: 3px solid black;
+	left: 20%;
+	right: 20%;
+	color: white;
+	text-align: center;
+}
+
+.full_page .footer .payload{
+	position: absolute;
+	top: 15%;
+	left: 5%;
+	right: 5%;
+	bottom: 2%;
+	background-position: center;
+	background-size: 100%, 100%;
+	background-image: url('fault_0.png');
+	background-repeat: no-repeat;
+}

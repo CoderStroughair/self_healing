@@ -1,0 +1,35 @@
+<!-- This Webpage was created by Michael Stroughair in the Summer of 2015 for the ESB Self-Healing Network model-->
+<!DOCTYPE html>
+<head>
+	<title>Self-Healing Network Model</title>
+	<link href="style.css" rel = "stylesheet">
+	<script type = "text/javascript" src = "script.js"></script>
+</head>
+
+<body>
+	<div class = "full_page">
+		<div class = "header"><!-- Holds the ESB Networks logo, and the title -->
+			<div class = "logo"><!-- Holds the ESB logo in the topn right hand corner --></div>
+			<div class = "status"><h1>Network is Stable</h1></div> <!-- Holds a sign displaying the status of the Network -->
+		</div>
+		<div class = "footer">
+			<div><iframe id = "time" src = "time.html" Frameborder = "0"></iframe></div>
+			<div class = "chart" style = "display: none;">
+				<div class = "text_left" ><h4 style = "margin-top: 0; font-size: 20px;">Max Homes without Power</h4></div>
+				<div class = "bar_red" ></div>
+				
+				<div class = "scale_top" > <h4 style = "margin-top: 0; font-size: 20px">50,000 Homes</h4></div>
+				<div class = "scale_bottom"> <h4 style= "margin-top: 0; font-size: 20px">1,000 Homes</h4></div>
+				
+				<div class = "text_right" ><h4 style = "margin-top: 0; font-size: 20px;">Current Homes without Power</h4></div>
+				<div class = "bar_yellow" ></div>
+			</div>		
+			
+			<div class = "payload"><!-- Holds the animations and the text information -->
+				<!-- Will have the background image of this div change depending on the stage -->
+				
+			</div>
+		</div>
+		<iframe id = "state_current" style="display: none;" src = "time.html" Frameborder = "0"></iframe><!-- Hidden iframe that holds the current state from the python code -->
+	</div>
+</body>
